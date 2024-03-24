@@ -23,6 +23,7 @@ public class BookStoreMenuContributor : IMenuContributor
     private Task ConfigureMainMenuAsync(MenuConfigurationContext context)
     {
         var administration = context.Menu.GetAdministration();
+        var l = context.GetLocalizer<BookStoreResource>();
 
         context.Menu.Items.Insert(
             0,
